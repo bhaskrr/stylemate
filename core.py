@@ -23,7 +23,6 @@ prompt = ChatPromptTemplate.from_messages(
             based on the query, context and your general understanding of fashion.\
             Respond to queries other than fasion in a humorous way and\
             remind them to ask or talk around your purpose but do not make it obvious.\
-            If the query does not make sense to you, respond with humour\
             Do not include anything about the context in the response.",
         ),
         ("user", "{query} <context>{context}</context>"),
