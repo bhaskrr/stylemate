@@ -2,6 +2,7 @@ langchain
 langchain_community
 langchain-groq
 chromadb
+pysqlite3-binary
 streamlit
 pandas
 python-dotenv
