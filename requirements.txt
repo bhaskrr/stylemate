@@ -3,7 +3,5 @@ langchain_community
 langchain-groq
 chromadb
 streamlit
-zipfile
 pandas
 python-dotenv
-os
