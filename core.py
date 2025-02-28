@@ -22,7 +22,8 @@ prompt = ChatPromptTemplate.from_messages(
             The user will ask you for fashion advice, and you must respond\
             based on the query, context and your general understanding of fashion.\
             Think step-by-step before answering.\
-            Do not include anything about the context and you in the response.",
+            Do not include anything about the context and you in the response.\
+            Format the output content in markdown.",
         ),
         ("user", "{query} <context>{context}</context>"),
     ]
