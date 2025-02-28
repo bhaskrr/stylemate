@@ -29,22 +29,15 @@ def respond(query):
 
 
 # Quick prompts
-st.write("**Quick Prompts:**")
-col1, col2, col3 = st.columns(3)
-with col1:
-    if st.button(
-        "Suggest me a funky outfit for a house party.", use_container_width=True
-    ):
-        respond("Suggest me a funky outfit for a house party.")
-with col2:
-    if st.button("Give me some outfit ideas for office.", use_container_width=True):
-        respond("Give me some outfit ideas for office.")
-with col3:
-    if st.button(
-        "What type of accessories should i wear for a wedding?",
-        use_container_width=True,
-    ):
-        respond("What type of accessories should i wear for a wedding?")
+quick_prompts = [
+    "Suggest me a funky outfit for a house party.",
+    "Give me some outfit ideas for office.",
+    "What type of accessories should i wear for a wedding?",
+]
+st.markdown("**Quick Prompts:**")
+
+for prompt in quick_prompts:
+    st.markdown(f"- {prompt}")
 
 
 # Chat Input
